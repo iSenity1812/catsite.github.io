@@ -128,7 +128,7 @@ header {
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-
+    max-width: 400px;
     /* border: 2px dashed red; */
 }
 
@@ -147,8 +147,8 @@ header {
 
 @media (max-width: 480px) {
     .gallery-item {
-        flex: 1 1 calc(50% - 2rem);
-        max-width: calc(50% - 2rem);
+        flex: 1 1 calc(40% - 2rem);
+        max-width: calc(40% - 2rem);
     }
 }
 
