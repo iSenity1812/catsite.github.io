@@ -64,6 +64,7 @@ header {
     color: #fff;
     font-size: 1.2rem;
     transition: color 0.3s;
+    font-weight: bold;
     /* border: 2px dashed red; */
 }
 
@@ -87,6 +88,7 @@ header {
 .search-bar button {
     padding: 0.3rem 0.5rem;
     font-size: 1rem;
+    font-weight: bold;
     border: none;
     background: #ff9900;
     color: #fff;
