@@ -7,6 +7,19 @@ body {
     margin: 0;
 }
 
+#main-content {
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s;
+}
+
+#main-content.dark-mode {
+    color: #fff;
+    background-color: #333;
+}
+
+
+
 header {
     background-color: #333;
     color: #fff;
@@ -34,7 +47,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     /* border: 2px dashed blue; */
 }
@@ -46,6 +59,54 @@ header {
     max-width: 1200px;
     /* border: 2px dashed green; */
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto;
+    width: 60px;
+    height: 30px;
+    margin-left: 1rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
 
 .nav-links {
     list-style: none;
@@ -101,13 +162,33 @@ header {
     background: #e55347;
 }
 
+.search-bar .login-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* border: 2px solid white; */
+    margin-left: 3rem;
+    padding: 0.1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.search-bar .login-btn .fa-user {
+    margin: 0 0.3rem 0 0;
+}
+
+.search-bar .login-btn:hover {
+    color: #ff9900;
+}
+
 .gallery {
     text-align: center;
 }
 
 .gallery h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 0 auto auto 2rem;
+    padding: 1.5rem;
 }
 
 
